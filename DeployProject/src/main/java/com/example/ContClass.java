@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ContClass {
 	
-	@GetMapping("/greet")
+	@RequestMapping("/greet")
 	public String greet()
 	{
 		return "hii deployed throgh jenkins";
 	}
-	@GetMapping("/greet2")
+	@RequestMapping("/greet2")
 	public String greet2()
 	{
 		return "hii deployed throgh jenkins war file";
